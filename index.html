@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Habilidades Interactivas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    
+  </header>
+  <main>
+  <h1>Juan Manuel Triana</h1>
+    <h2><span>Desarrollador Fronent Jr</span></h2>
+    <div class="contenedorIMG"></div><img class="soyyo" src="" alt="Soy Yo"></div>
+    <h2>¿Quien Soy?</h2>
+    <p>Soy desarrollador frontend junior con conocimientos en <strong>HTML, CSS, JavaScript, Python y MySQL</strong>. Me apasiona crear interfaces intuitivas y adaptables. Siempre estoy buscando aprender nuevas tecnologías y crecer como profesional.</p>
+    <p>Tambien cuento con conocimientos en <strong>Produccion de videos y edicion de videos, Unity, Animacion 2D y 3D.</strong>
+      <!-- Habilidades informaticas -->
+    <h3>Skill Set</h3>
+  <div class="skills-container">
+    <br>
+    <div class="skill" data-skill="HTML" style="--percentage: 90%">90%</div>
+    <div class="skill" data-skill="CSS" style="--percentage: 80%">80%</div>
+    <div class="skill" data-skill="JavaScript" style="--percentage: 70%">70%</div>
+    <div class="skill" data-skill="Python" style="--percentage: 60%">60%</div>
+    <div class="skill" data-skill="Git/GitHub" style="--percentage: 90%">90%</div>
+    <div class="skill" data-skill="MySQL" style="--percentage: 60%">60%</div>
+  </div>
+  <!-- Idiomas -->
+  <div class="languages-section">
+  <h3>Idiomas</h3>
+  
+  <div class="language">
+    <span class="lang-label">Español</span>
+    <div class="lang-bar">
+      <div class="lang-fill" style="width: 100%;">100%</div>
+    </div>
+  </div>
+
+  <div class="language">
+    <span class="lang-label">Inglés B2</span>
+    <div class="lang-bar">
+      <div class="lang-fill" style="width: 68%;">68%</div>
+    </div>
+  </div>
+</div>
+<div>
+  <section class="timeline-section">
+  <h2>Educación</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Desarrollo FullStack Mintic</h3>
+        <p class="institution">UNIVERSIDAD LIBRE</p>
+        <p class="date">2025- 2025</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Diplomado En Desarrollo WEB</h3>
+        <p class="institution">ACADEMIA DE DIBUJO PROFECIONAL</p>
+        <p class="date">2022 - 2023</p>
+      </div>
+    </div>
+
+     <div class="timeline-item">
+      <div class="timeline-content">
+        <h3>Producción Multimedial</h3>
+        <p class="institution">ACADEMIA DE DIBUJO PROFECIONAL</p>
+        <p class="date">2029 - 2022</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+</div>
+<!-- Portafolio-->
+<section class="portfolio-section">
+  <h2>Portafolio</h2>
+  <div class="portfolio-gallery">
+
+    <!-- Proyecto 1 -->
+    <div class="portfolio-item" onclick="openModal('video1')">
+      <img src="screen1.jpg" alt="Proyecto 1" />
+      <p class="title">Doctor Hacker</p>
+    </div>
+
+    <!-- Proyecto 2 -->
+    <div class="portfolio-item" onclick="openModal('video2')">
+      <img src="screen2.jpg" alt="Proyecto 2" />
+      <p class="title">Museum</p>
+    </div>
+
+      <!-- Proyecto 3 -->
+    <div class="portfolio-item" onclick="openModal('video3')">
+      <img src="screen3.jpg" alt="Proyecto 3" />
+      <p class="title">The Gem</p>
+    </div>
+
+
+  </div>
+
+  <!-- Modal de Proyecto -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="video-container">
+        <!-- Aquí se carga el video dinámicamente -->
+      </div>
+      <p id="video-description"></p>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 Juan Manuel Triana Desarrollador Frontend Jr. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
