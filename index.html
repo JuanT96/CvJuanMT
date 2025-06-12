@@ -16,13 +16,15 @@
   </header>
   <main>
   <h1>Juan Manuel Triana</h1>
-    <h2><span>Desarrollador Fronent Jr</span></h2>
+    <h4><span>Desarrollador Fronent Jr</span></h4>
     <div class="contenedorIMG">
-        <img class="soyyo" src="" alt="Soy Yo">
+        <img class="soyyo foto-hover" src="SoyYo.png" alt="Soy Yo">
     </div>
+    <br>
     <h2>¿Quien Soy?</h2>
+    <br>
     <p class="quienSoy">Soy desarrollador frontend junior con conocimientos en <strong>HTML, CSS, JavaScript, Python y MySQL</strong>. Me apasiona crear interfaces intuitivas y adaptables. Siempre estoy buscando aprender nuevas tecnologías y crecer como profesional.</p>
-    <p>Tambien cuento con conocimientos en <strong>Produccion de videos y edicion de videos, Unity, Animacion 2D y 3D.</strong>
+    <p>Tambien cuento con conocimientos en <strong>Produccion de videos y edicion de videos, Unity, IA, Animacion 2D y 3D</strong>
       <!-- Habilidades informaticas -->
       <br>
       <br>
@@ -43,14 +45,15 @@
   <h3>Idiomas</h3>
   
   <div class="language">
-    <span class="lang-label">Español</span>
+    <span class="lang-label">Español - Nativo</span>
+
     <div class="lang-bar">
       <div class="lang-fill" style="width: 100%;">100%</div>
     </div>
   </div>
 
   <div class="language">
-    <span class="lang-label">Inglés B2</span>
+    <span class="lang-label">Inglés - B2</span>
     <div class="lang-bar">
       <div class="lang-fill" style="width: 68%;">68%</div>
     </div>
@@ -59,6 +62,7 @@
 <div>
   <section class="timeline-section">
   <h3>Educación</h3>
+  <br>
   <div class="timeline">
 
     <div class="timeline-item">
@@ -91,6 +95,7 @@
 <!-- Portafolio-->
 <section class="portfolio-section">
   <h3>Portafolio</h3>
+  <br>
   <div class="portfolio-gallery">
 
     <!-- Proyecto 1 -->
@@ -113,7 +118,6 @@
 
 
   </div>
-
   <!-- Modal de Proyecto -->
   <div id="modal" class="modal">
     <div class="modal-content">
@@ -125,14 +129,40 @@
     </div>
   </div>
 </section>
+<section class="websites-section">
+  <h3>Mis Sitios Web</h3>
+  <br>
+  <div class="website-card">
+    <a href="https://juant96.github.io/ProyectoTomy-s/" target="_blank" rel="noopener noreferrer">
+      <img src="tomys.png" alt="Tomys Web Site" class="website-image">
+    </a>
+  </div>
+</section>
+
+<!-- Contacto -->
+
+    <section id="contacto" style="padding: 2rem;">
+  <h2>Contáctame</h2>
+  <form action="https://formspree.io/f/myzjwbql" method="POST" class="formulario-contacto">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+    </section>
+
   </main>
   <footer class="footer">
     <div class="footer-content">
       <p>© 2025 Juan Manuel Triana Desarrollador Frontend Jr. Todos los derechos reservados.</p>
       <nav class="footer-nav">
         <a href="#">Inicio</a>
-        <a href="#"></a>
-        <a href="#"></a>
       </nav>
     </div>
   </footer>

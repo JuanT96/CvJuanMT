@@ -16,6 +16,20 @@
     margin: 0;              /* Elimina márgenes por defecto */
     font-family: 'Edu NSW ACT Hand Pre', cursive;
     }
+
+    .soyyo{
+      width: 220px;
+    }
+
+ .foto-hover {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.foto-hover:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px #00aeff);
+}
 /*skills*/
     .skills-container {
       display: flex;
@@ -319,4 +333,83 @@ main {
 .quienSoy{
   text-align: justify;
 }
+/*Sitios web*/
+.websites-section {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.website-card {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.website-image {
+  width: 100%;
+  max-width: 100px;
+  transition: transform 0.4s ease;
+  animation: pulse 2s infinite;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Animación: zoom suave */
+@keyframes pulse {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+/* Efecto al pasar el mouse */
+.website-image:hover {
+  transform: scale(1.2);
+  animation: none; /* Detiene la animación al hacer hover */
+  z-index: 10;
+}
+
+/* Formulario*/
+
+.formulario-contacto {
+    max-width: 500px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .formulario-contacto:hover {
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.4);
+  }
+
+  .formulario-contacto label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .formulario-contacto button {
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #00aeff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .formulario-contacto button:hover {
+    background-color: #0095d8;
+  }
 
