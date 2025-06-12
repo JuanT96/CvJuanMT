@@ -1,3 +1,11 @@
+ html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
  body {
       background-color: #f0f0f0;
     font-family: 'Arial', sans-serif;
@@ -73,10 +81,10 @@
     }
 
     /*idiomas*/
-    .languages-section {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 0 20px;
+.languages-section {
+max-width: 600px;
+margin: 30px auto;
+padding: 0 20px;
 }
 
 .language {
@@ -99,15 +107,22 @@
 }
 
 .lang-fill {
-  background-color: #00aeff;
   height: 100%;
   line-height: 25px;
   color: white;
   text-align: right;
   padding-right: 10px;
   border-radius: 20px 0 0 20px;
-  transition: width 0.5s ease;
+  background-color: #00aeff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: left center;
 }
+
+.lang-fill:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px #00aeff;
+}
+
 /*footer*/
 main {
   flex: 1; /* para que main ocupe todo el espacio disponible y empuje footer al final */
@@ -145,6 +160,8 @@ main {
 .footer-nav a:hover {
   color: #fff;
 }
+
+/*estudios*/
 .timeline-section {
   max-width: 800px;
   margin: 50px auto;
@@ -178,7 +195,7 @@ main {
   border-radius: 50%;
   width: 16px;
   height: 16px;
-  box-shadow: 0 0 0 4px #f0f0f0;
+  box-shadow: 0 0 0 4px #00aeff;
   transition: transform 0.3s ease;
 }
 
@@ -196,7 +213,7 @@ main {
 
 .timeline-item:hover .timeline-content {
   transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 174, 255, 0.4); /* azul brillante con transparencia */
 }
 
 .timeline-content h3 {
@@ -248,6 +265,17 @@ main {
 }
 
 /* Modal */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .modal-content iframe {
+    height: 200px;
+  }
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -288,3 +316,7 @@ main {
   align-items: center;      /* Centrado vertical */
   height: 300px;            /* Ajusta según tu caso */
 }
+.quienSoy{
+  text-align: justify;
+}
+
