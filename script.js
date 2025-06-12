@@ -1,4 +1,33 @@
 
+  // Menú responsive
+const toggleBtn = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+toggleBtn.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+// Cerrar menú al hacer clic fuera
+document.addEventListener("click", (e) => {
+  if (!navLinks.contains(e.target) && !toggleBtn.contains(e.target)) {
+    navLinks.classList.remove("show");
+  }
+});
+
+// Ocultar/mostrar navbar al hacer scroll
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  if (scrollTop > lastScrollTop) {
+    navbar.style.top = "-100px"; // ocultar
+  } else {
+    navbar.style.top = "0"; // mostrar
+  }
+  lastScrollTop = scrollTop;
+});
+
   const videos = {
     video1: {
       url: "https://www.youtube.com/embed/8cH0CHbQ01E",
@@ -29,3 +58,4 @@
     document.getElementById("modal").style.display = "none";
     document.getElementById("video-container").innerHTML = "";
   }
+
