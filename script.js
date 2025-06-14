@@ -35,7 +35,7 @@ window.addEventListener("scroll", () => {
     },
     video2: {
       url: "https://www.youtube.com/embed/lg7JTVZQMkE",
-      description: "Museum; es un Museo virtual desarrollado en unity donde podrás conocer un poco sobre la humanidad desde la luna y acompañados de algunos amiguitos espaciales."
+      description: "Museum, es un Museo virtual desarrollado en unity donde podrás conocer un poco sobre la humanidad desde la luna y acompañados de algunos amiguitos espaciales."
     },
       video3: {
       url: "https://www.youtube.com/embed/-59Eo6OdDOw",
