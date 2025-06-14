@@ -16,7 +16,9 @@
     margin: 0;              /* Elimina márgenes por defecto */
     font-family: 'Bebas Neue', sans-serif;
     }
-
+p {
+  font-family: 'Edu NSW ACT Hand Pre', sans-serif;;
+}
     .soyyo{
       width: 220px;
     }
