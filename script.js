@@ -31,15 +31,15 @@ window.addEventListener("scroll", () => {
   const videos = {
     video1: {
       url: "https://www.youtube.com/embed/8cH0CHbQ01E",
-      description: "Videojuego de plataforma en 2D desarrollado en Stencyl. En Doctor Hacker deberas adentrarte dentro de tu ordenador y destruir los malwares que te rodean."
+      description: "Videojuego de plataforma en 2D desarrollado en Stencyl. En Doctor Hacker deberás adentrarte en tu ordenador y destruir los malwares que te rodean."
     },
     video2: {
       url: "https://www.youtube.com/embed/lg7JTVZQMkE",
-      description: "Museum es un Museo virtual desarrollado en unity donde podras conocer un poco sobre la humanidad desde la luna y acompañados de algunos amiguitos espaciales."
+      description: "Museum; es un Museo virtual desarrollado en unity donde podrás conocer un poco sobre la humanidad desde la luna y acompañados de algunos amiguitos espaciales."
     },
       video3: {
       url: "https://www.youtube.com/embed/-59Eo6OdDOw",
-      description: "The Gem es un cortometraje desarrollado en Blender y Unity donde su protagonista se adentra en un planeta inospito por su tan deseada Gema."
+      description: "The Gem es un cortometraje desarrollado en Blender y Unity donde su protagonista se adentra en un planeta inhóspito por su tan deseada Gema."
     }
   };
 
