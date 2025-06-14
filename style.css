@@ -405,6 +405,17 @@ main {
   text-align: justify;
 }
 /*Sitios web*/
+.websites-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espacio horizontal entre tarjetas */
+  flex-wrap: wrap; /* Permite que se acomoden si no caben en pantalla */
+  margin-top: 30px;
+}
+
+.website-card {
+  text-align: center;
+}
 .websites-section {
   text-align: center;
   padding: 40px 20px;
@@ -419,7 +430,7 @@ main {
   width: 100%;
   max-width: 100px;
   transition: transform 0.4s ease;
-  animation: pulse 2s infinite;
+  animation: pulse 5s infinite;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -510,3 +521,23 @@ main {
   33%  { background-color: rgba(0, 255, 0, 0.6); }   /* Verde */
   66%  { background-color: rgba(0, 0, 255, 0.6); }   /* Azul */
   100% { background-color: rgba(255, 0, 0, 0.6); }   /* Vuelve a rojo */
+
+  /* correccion de tortas de %*/
+
+@media (max-width: 600px) {
+  .skills-container {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .skill {
+    flex: 0 0 45%; /* Ocupa aprox. 2 elementos por fila con algo de espacio */
+    max-width: 45%;
+    margin: 0 auto;
+  }
+
+  .skill::after {
+    bottom: -20px;
+    font-size: 0.9em;
+  }
+}

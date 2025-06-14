@@ -43,11 +43,11 @@ window.addEventListener("scroll", () => {
     },
       video4: {
       url: "https://www.youtube.com/embed/FKub0hxTXRg",
-      description: "OVNI es un videojuego de preguntas y respuestas sobre ovnis donde podras poner a prueba tus conocimientos sobre aliens."
+      description: "OVNI es un videojuego de preguntas y respuestas sobre ovnis donde podrás poner a prueba tus conocimientos sobre aliens."
     },
       video5: {
       url: "https://www.youtube.com/embed/P_sUocvJ7Bk",
-      description: "VACUN, es un videojuego de terror desarrollado en Unity, se encuentra en su fase Alfa, en VACUN deberas encontrar todos las particulas de virus antes de que sea demaciado tarde."
+      description: "VACUN, es un videojuego de terror desarrollado en Unity, se encuentra en su fase Alfa, en VACUN deberás encontrar todos las partículas de virus antes de que sea demasiado tarde."
     }
   };
 
