@@ -14,7 +14,7 @@
     padding: 40px 0 0 0;
     min-height: 100vh;      /* Para que ocupe toda la altura */
     margin: 0;              /* Elimina márgenes por defecto */
-    font-family: 'Edu NSW ACT Hand Pre', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     }
 
     .soyyo{
@@ -142,7 +142,6 @@ header {
 
     h1{
       text-align: center;
-      text-shadow: 0px 0px 5px black;
       color: #333;
       margin-bottom: 20px;
     }
@@ -160,7 +159,6 @@ header {
     }
        h4{
       text-align: center;
-      text-shadow: 0px 0px 5px black;
       color: #333;
       margin-bottom: 20px;
     }
@@ -441,13 +439,20 @@ main {
 /* Formulario*/
 
 .formulario-contacto {
-    max-width: 500px;
-    margin: auto;
-    padding: 1.5rem;
-    border-radius: 10px;
-    background-color: #f5f5f5;
-    transition: box-shadow 0.3s ease;
-  }
+  max-width: 500px;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+
+  /* Fondo con imagen */
+  background-image: url('circuitos.png'); /* Cambia esto por la ruta real */
+  background-size: cover;       /* Ajusta la imagen para que cubra todo */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+
+  transition: box-shadow 0.3s ease;
+}
 
   .formulario-contacto:hover {
     box-shadow: 0 0 20px rgba(0, 174, 255, 0.4);
@@ -457,6 +462,7 @@ main {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
+    color: white;
   }
 
   .formulario-contacto input,
@@ -483,4 +489,22 @@ main {
   .formulario-contacto button:hover {
     background-color: #0095d8;
   }
+/*linea de separacion secciones*/
+.separador {
+  border: none;
+  height: 4px;
+  width: 100vw;
+  margin: 40px 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 0, 0, 0.6); /* color inicial */
+  animation: rgbGlow 3s linear infinite;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
 
+@keyframes rgbGlow {
+  0%   { background-color: rgba(255, 0, 0, 0.6); }   /* Rojo */
+  33%  { background-color: rgba(0, 255, 0, 0.6); }   /* Verde */
+  66%  { background-color: rgba(0, 0, 255, 0.6); }   /* Azul */
+  100% { background-color: rgba(255, 0, 0, 0.6); }   /* Vuelve a rojo */
