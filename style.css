@@ -109,6 +109,7 @@ header {
       gap: 30px;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 30px;
     }
 
     .skill {
@@ -126,6 +127,7 @@ header {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      position: relative;
     }
 
     .skill:hover {
@@ -141,6 +143,19 @@ header {
       font-weight: normal;
       color: #444;
     }
+    /* Responsividad para móviles */
+@media (max-width: 600px) {
+  .skill {
+    flex: 0 0 45%;
+    max-width: 45%;
+    margin: 10px auto;
+  }
+
+  .skill::after {
+    bottom: -20px;
+    font-size: 0.9em;
+  }
+}
 
     h1{
       text-align: center;
@@ -522,22 +537,3 @@ main {
   66%  { background-color: rgba(0, 0, 255, 0.6); }   /* Azul */
   100% { background-color: rgba(255, 0, 0, 0.6); }   /* Vuelve a rojo */
 
-  /* correccion de tortas de %*/
-
-@media (max-width: 600px) {
-  .skills-container {
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .skill {
-    flex: 0 0 45%; /* Ocupa aprox. 2 elementos por fila con algo de espacio */
-    max-width: 45%;
-    margin: 0 auto;
-  }
-
-  .skill::after {
-    bottom: -20px;
-    font-size: 0.9em;
-  }
-}
