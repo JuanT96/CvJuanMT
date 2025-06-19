@@ -32,6 +32,91 @@ p {
   transform: scale(1.05);
   filter: drop-shadow(0 0 10px #00aeff);
 }
+/*Fuente Matrix*/
+.matrix-skillset {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Estilo para sección estilo Matrix */
+.matrix-skillset {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.text-matrix {
+  color: #00ff00;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px #00ff00;
+}
+/* Estilo para fondo Matrix */
+#skill-set {
+  position: relative;
+  overflow: hidden;
+}
+
+#matrix-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Detrás del contenido */
+  opacity: 0.15;
+}
+
+#skill-set .container {
+  position: relative;
+  z-index: 1; /* Encima del canvas */
+}
+
+/* Personaliza el contenedor de cada skill */
+.matrix-skill span {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+/* Barra de progreso estilo Matrix */
+.progress {
+  width: 100%;
+  background-color: #1a1a1a;
+  height: 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.bg-matrix {
+  background-color: #00ff00;
+  color: #000;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Animación de entrada suave */
+.progress-bar {
+  height: 100%;
+  line-height: 25px;
+  text-align: right;
+  padding-right: 10px;
+  font-weight: bold;
+  transition: width 1s ease-in-out;
+}
+
+@keyframes loadSkill {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--skill);
+  }
+}
+
+
+
+
 /* Navegación */
 header {
   position: fixed;
@@ -108,60 +193,6 @@ header {
     display: block;
   }
 }
-/*skills*/
-    .skills-container {
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .skill {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      background: conic-gradient(#00aeff var(--percentage), #ccc 0%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #222;
-      font-size: 1.1em;
-      font-weight: bold;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      position: relative;
-    }
-
-    .skill:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 20px #00aeff;
-    }
-
-    .skill::after {
-      content: attr(data-skill);
-      position: absolute;
-      bottom: -30px;
-      font-size: 1em;
-      font-weight: normal;
-      color: #444;
-    }
-    /* Responsividad para móviles */
-@media (max-width: 600px) {
-  .skill {
-    flex: 0 0 45%;
-    max-width: 45%;
-    margin: 10px auto;
-  }
-
-  .skill::after {
-    bottom: -20px;
-    font-size: 0.9em;
-  }
-}
-
     h1{
       text-align: center;
       color: #333;
@@ -541,3 +572,25 @@ main {
   33%  { background-color: rgba(0, 255, 0, 0.6); }   /* Verde */
   66%  { background-color: rgba(0, 0, 255, 0.6); }   /* Azul */
   100% { background-color: rgba(255, 0, 0, 0.6); }   /* Vuelve a rojo */
+
+#skill-set {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 0;
+}
+
+#matrix-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+  display: block;
+}
+
+#skill-set .container {
+  position: relative;
+  z-index: 1;
+}
