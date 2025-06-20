@@ -297,24 +297,32 @@ main {
   color: #fff;
 }
 
-/*estudios*/
-.timeline-section {
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 0 20px;
-}
-
-.timeline-section h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #333;
-}
-
-.timeline {
+/* Fondo tipo Matrix para Educación */
+.matrix-educacion {
+  background-color: #000;
+  color: #00ff00;
+  font-family: 'Share Tech Mono', monospace;
+  overflow: hidden;
   position: relative;
-  margin-left: 20px;
-  border-left: 4px solid #00aeff;
-  padding-left: 20px;
+  min-height: 600px; /* fuerza visibilidad inicial */
+}
+
+#matrix-canvas-educacion {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 0;
+  display: block;
+}
+
+/* Estilo línea de tiempo */
+.timeline-vertical {
+  position: relative;
+  margin-left: 30px;
+  border-left: 3px solid #00ff00;
+  padding-left: 30px;
 }
 
 .timeline-item {
@@ -322,49 +330,31 @@ main {
   margin-bottom: 40px;
 }
 
-.timeline-item::before {
-  content: "";
+.timeline-dot {
   position: absolute;
-  top: 0;
-  left: -12px;
-  background-color: #00aeff;
+  top: 10px;
+  left: -15px;
+  width: 20px;
+  height: 20px;
+  background-color: #00ff00;
   border-radius: 50%;
-  width: 16px;
-  height: 16px;
-  box-shadow: 0 0 0 4px #00aeff;
-  transition: transform 0.3s ease;
-}
-
-.timeline-item:hover::before {
-  transform: scale(1.3);
+  box-shadow: 0 0 10px #00ff00;
 }
 
 .timeline-content {
-  background-color: #fff;
-  padding: 15px 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease-in-out;
 }
 
-.timeline-item:hover .timeline-content {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 16px rgba(0, 174, 255, 0.4); /* azul brillante con transparencia */
-}
-
-.timeline-content h3 {
-  margin: 0 0 5px;
-  color: #222;
-}
-
-.timeline-content .institution {
-  font-weight: bold;
-  color: #555;
-}
-
-.timeline-content .date {
-  font-size: 0.9em;
-  color: #888;
+/* Animación de aparición suave */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 /*portafolio*/
 .portfolio-section {
@@ -594,3 +584,4 @@ main {
   position: relative;
   z-index: 1;
 }
+
