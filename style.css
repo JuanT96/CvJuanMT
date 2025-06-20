@@ -54,7 +54,7 @@ p {
   position: relative;
 }
 .txh4{
-  color: #00ff00;
+  color: #00ff00 ;
 }
 .text-matrix {
   color: #00ff00;
@@ -564,12 +564,14 @@ main {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(255, 0, 0, 0.6); /* color inicial */
-  animation: rgbGlow 8s linear infinite;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 1);
+  animation: ledGlow 6s linear infinite;
+  box-shadow:
+    0 0 30px rgba(255, 0, 0, 1),
+    0 0 60px rgba(255, 0, 0, 0.9),
+    0 0 90px rgba(255, 0, 0, 0.8);
 }
-
-@keyframes rgbGlow {
+@keyframes ledGlow {
   0%   { background-color: rgba(255, 0, 0, 0.6); }   /* Rojo */
   33%  { background-color: rgba(0, 255, 0, 0.6); }   /* Verde */
   66%  { background-color: rgba(0, 0, 255, 0.6); }   /* Azul */
